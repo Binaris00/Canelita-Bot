@@ -4,7 +4,7 @@ import json
 import os
 from random import choice
 from asyncio import sleep
-import logging
+from token_1 import TOKEN
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix='cn!', intents=intents)
@@ -74,4 +74,4 @@ async def canal(interaction: discord.Interaction, channel:discord.TextChannel=No
             await interaction.channel.send(choice(data_json))
         await sleep(time)
 
-bot.run("MTE3MzM3ODIwNTM3ODQyODk3Mg.GsMeQ1.J7EV7ZxSiXjds661KNs7L32LxKlu9D87dfJc44")
+bot.run(TOKEN)
